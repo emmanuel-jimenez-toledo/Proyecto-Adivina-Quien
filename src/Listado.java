@@ -144,12 +144,13 @@ public class Listado extends javax.swing.JDialog {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(81, 81, 81)
                                         .addComponent(jLabel_Expli3)
-                                        .addGap(62, 62, 62))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(251, 251, 251)
-                                .addComponent(jButton_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 53, Short.MAX_VALUE)))
+                                        .addGap(62, 62, 62)))))
+                        .addGap(0, 73, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                .addGap(248, 248, 248)
+                .addComponent(jButton_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,9 +178,9 @@ public class Listado extends javax.swing.JDialog {
                             .addComponent(jScrollPane_Imaginarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane_Reales, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane_Animales, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton_regresar)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
