@@ -35,7 +35,9 @@ public class Intrucciones extends javax.swing.JDialog {
         jLabel_Intro4 = new javax.swing.JLabel();
         jLabel_Intro5 = new javax.swing.JLabel();
         jButton_regresar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_Titulo_inst = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -68,8 +70,12 @@ public class Intrucciones extends javax.swing.JDialog {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Mistral", 2, 24)); // NOI18N
-        jLabel1.setText("Instrucciones");
+        jLabel_Titulo_inst.setFont(new java.awt.Font("Mistral", 2, 24)); // NOI18N
+        jLabel_Titulo_inst.setText("Instrucciones");
+
+        jLabel2.setText("En caso de que las características no coincidan con ningún personaje, se le pedirá que ingrese");
+
+        jLabel3.setText("el personaje en el que estaba pensando.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -79,32 +85,43 @@ public class Intrucciones extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel_Titulo_inst, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(193, 193, 193)
                         .addComponent(jButton_Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(259, 259, 259)
-                                .addComponent(jLabel_Intro5))
+                                .addGap(167, 167, 167)
+                                .addComponent(jLabel_Bienvenido))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(246, 246, 246)
-                                .addComponent(jButton_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(jLabel_Intro4))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(66, 66, 66)
+                                .addGap(71, 71, 71)
                                 .addComponent(jLabel_Intro2))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(105, 105, 105)
-                                .addComponent(jLabel_Intro3))
+                                .addGap(133, 133, 133)
+                                .addComponent(jLabel_Intro1))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addGap(104, 104, 104)
+                                    .addComponent(jLabel_Intro3)
+                                    .addGap(44, 44, 44))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(43, 43, 43)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel2)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(213, 213, 213)
+                                                .addComponent(jLabel_Intro5))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(7, 7, 7)
+                                                .addComponent(jLabel_Intro4))))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(124, 124, 124)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel_Bienvenido)
-                                    .addComponent(jLabel_Intro1))))
-                        .addGap(0, 52, Short.MAX_VALUE)))
+                                .addGap(241, 241, 241)
+                                .addComponent(jButton_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(186, 186, 186)
+                                .addComponent(jLabel3)))
+                        .addGap(0, 57, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -113,8 +130,8 @@ public class Intrucciones extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                    .addComponent(jLabel_Titulo_inst, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
                 .addComponent(jLabel_Bienvenido)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel_Intro1)
@@ -127,8 +144,12 @@ public class Intrucciones extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel_Intro5)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(jButton_regresar)
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addGap(22, 22, 22))
         );
 
         pack();
@@ -190,12 +211,14 @@ public class Intrucciones extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Salir;
     private javax.swing.JButton jButton_regresar;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel_Bienvenido;
     private javax.swing.JLabel jLabel_Intro1;
     private javax.swing.JLabel jLabel_Intro2;
     private javax.swing.JLabel jLabel_Intro3;
     private javax.swing.JLabel jLabel_Intro4;
     private javax.swing.JLabel jLabel_Intro5;
+    private javax.swing.JLabel jLabel_Titulo_inst;
     // End of variables declaration//GEN-END:variables
 }

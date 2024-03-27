@@ -65,6 +65,11 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton_Jugar.setText("Jugar");
+        jButton_Jugar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_JugarActionPerformed(evt);
+            }
+        });
 
         jButton_Créditos.setText("Créditos");
         jButton_Créditos.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +145,12 @@ public class Inicio extends javax.swing.JFrame {
         Intrucciones instr = new Intrucciones(this, rootPaneCheckingEnabled);
         instr.setVisible(true);
     }//GEN-LAST:event_jButton_InstruccionesActionPerformed
+
+    private void jButton_JugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_JugarActionPerformed
+        this.setVisible(false);
+        Jugar jugar = new Jugar(this, rootPaneCheckingEnabled);
+        jugar.setVisible(true);
+    }//GEN-LAST:event_jButton_JugarActionPerformed
 
     /**
      * @param args the command line arguments
