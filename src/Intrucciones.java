@@ -27,8 +27,10 @@ public class Intrucciones extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton_Salir = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel_Bienvenido = new javax.swing.JLabel();
+        jButton_Salir = new javax.swing.JButton();
         jLabel_Intro1 = new javax.swing.JLabel();
         jLabel_Intro2 = new javax.swing.JLabel();
         jLabel_Intro3 = new javax.swing.JLabel();
@@ -37,9 +39,14 @@ public class Intrucciones extends javax.swing.JDialog {
         jButton_regresar = new javax.swing.JButton();
         jLabel_Titulo_inst = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(188, 252, 203));
+
+        jLabel3.setText("el personaje en el que estaba pensando.");
+
+        jLabel_Bienvenido.setText("¡Bienvendio al icónico juego de \"Adivina Quién\"!");
 
         jButton_Salir.setBackground(new java.awt.Color(255, 0, 0));
         jButton_Salir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -51,8 +58,6 @@ public class Intrucciones extends javax.swing.JDialog {
             }
         });
 
-        jLabel_Bienvenido.setText("¡Bienvendio al icónico juego de \"Adivina Quién\"!");
-
         jLabel_Intro1.setText("En este juego, usted le hará adivinar al programa el personaje");
 
         jLabel_Intro2.setText("que esté adivinando, todo a través de una serie de preguntas que la máquina le hará,");
@@ -63,6 +68,7 @@ public class Intrucciones extends javax.swing.JDialog {
 
         jLabel_Intro5.setText("en pantalla.");
 
+        jButton_regresar.setBackground(new java.awt.Color(51, 241, 107));
         jButton_regresar.setText("Regresar");
         jButton_regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,95 +81,98 @@ public class Intrucciones extends javax.swing.JDialog {
 
         jLabel2.setText("En caso de que las características no coincidan con ningún personaje, se le pedirá que ingrese");
 
-        jLabel3.setText("el personaje en el que estaba pensando.");
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(59, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel2)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel_Bienvenido)
+                                .addGap(167, 167, 167))
+                            .addComponent(jButton_Salir, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel_Intro4)
+                                .addGap(54, 54, 54))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(190, 190, 190))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(137, 137, 137)
+                        .addComponent(jLabel_Intro1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addComponent(jLabel_Intro2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel_Intro3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(264, 264, 264)
+                        .addComponent(jLabel_Intro5))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(243, 243, 243)
+                        .addComponent(jLabel_Titulo_inst))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(254, 254, 254)
+                        .addComponent(jButton_regresar)))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addComponent(jButton_Salir)
+                .addGap(7, 7, 7)
+                .addComponent(jLabel_Titulo_inst)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel_Bienvenido)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_Intro1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_Intro2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_Intro3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_Intro4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_Intro5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(jButton_regresar)
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel_Titulo_inst, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(193, 193, 193)
-                        .addComponent(jButton_Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(167, 167, 167)
-                                .addComponent(jLabel_Bienvenido))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(71, 71, 71)
-                                .addComponent(jLabel_Intro2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(133, 133, 133)
-                                .addComponent(jLabel_Intro1))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addGap(104, 104, 104)
-                                    .addComponent(jLabel_Intro3)
-                                    .addGap(44, 44, 44))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(43, 43, 43)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel2)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(213, 213, 213)
-                                                .addComponent(jLabel_Intro5))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(7, 7, 7)
-                                                .addComponent(jLabel_Intro4))))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(241, 241, 241)
-                                .addComponent(jButton_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(186, 186, 186)
-                                .addComponent(jLabel3)))
-                        .addGap(0, 57, Short.MAX_VALUE)))
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_Titulo_inst, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addComponent(jLabel_Bienvenido)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel_Intro1)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel_Intro2)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel_Intro3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel_Intro4)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel_Intro5)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(jButton_regresar)
-                .addGap(22, 22, 22))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_jButton_SalirActionPerformed
 
     private void jButton_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_regresarActionPerformed
         this.setVisible(false);
         Inicio init = new Inicio();
         init.setVisible(true);
     }//GEN-LAST:event_jButton_regresarActionPerformed
+
+    private void jButton_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton_SalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,7 +218,27 @@ public class Intrucciones extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton_Créditos;
+    private javax.swing.JButton jButton_Créditos1;
+    private javax.swing.JButton jButton_Créditos2;
+    private javax.swing.JButton jButton_Créditos3;
+    private javax.swing.JButton jButton_Instrucciones;
+    private javax.swing.JButton jButton_Instrucciones1;
+    private javax.swing.JButton jButton_Instrucciones2;
+    private javax.swing.JButton jButton_Instrucciones3;
+    private javax.swing.JButton jButton_Jugar;
+    private javax.swing.JButton jButton_Jugar1;
+    private javax.swing.JButton jButton_Jugar2;
+    private javax.swing.JButton jButton_Jugar3;
+    private javax.swing.JButton jButton_Personajes;
+    private javax.swing.JButton jButton_Personajes1;
+    private javax.swing.JButton jButton_Personajes2;
+    private javax.swing.JButton jButton_Personajes3;
     private javax.swing.JButton jButton_Salir;
+    private javax.swing.JButton jButton_Salir1;
+    private javax.swing.JButton jButton_Salir2;
+    private javax.swing.JButton jButton_Salir3;
+    private javax.swing.JButton jButton_Salir4;
     private javax.swing.JButton jButton_regresar;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -219,6 +248,15 @@ public class Intrucciones extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel_Intro3;
     private javax.swing.JLabel jLabel_Intro4;
     private javax.swing.JLabel jLabel_Intro5;
+    private javax.swing.JLabel jLabel_Titulo1;
+    private javax.swing.JLabel jLabel_Titulo2;
+    private javax.swing.JLabel jLabel_Titulo3;
+    private javax.swing.JLabel jLabel_Titulo4;
     private javax.swing.JLabel jLabel_Titulo_inst;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel_Fondo;
+    private javax.swing.JPanel jPanel_Fondo1;
+    private javax.swing.JPanel jPanel_Fondo2;
+    private javax.swing.JPanel jPanel_Fondo3;
     // End of variables declaration//GEN-END:variables
 }

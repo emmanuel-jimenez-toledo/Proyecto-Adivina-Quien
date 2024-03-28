@@ -23,171 +23,187 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel_Titulo_inst" min="-2" pref="109" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="193" max="-2" attributes="0"/>
-                      <Component id="jButton_Salir" min="-2" pref="45" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="jLabel_Bienvenido" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                              <Component id="jLabel_Intro2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
-                              <Component id="jLabel_Intro1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-                                  <Component id="jLabel_Intro3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="213" max="-2" attributes="0"/>
-                                              <Component id="jLabel_Intro5" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                              <Component id="jLabel_Intro4" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="241" max="-2" attributes="0"/>
-                              <Component id="jButton_regresar" min="-2" pref="85" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="0" pref="57" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton_Salir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="jLabel_Titulo_inst" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Component id="jLabel_Bienvenido" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel_Intro1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel_Intro2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel_Intro3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel_Intro4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel_Intro5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
-              <Component id="jButton_regresar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton_Salir">
+    <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="ff" type="rgb"/>
+          <Color blue="cb" green="fc" red="bc" type="rgb"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="14" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_SalirActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Bienvenido">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="&#xa1;Bienvendio al ic&#xf3;nico juego de &quot;Adivina Qui&#xe9;n&quot;!"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Intro1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="En este juego, usted le har&#xe1; adivinar al programa el personaje"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Intro2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="que est&#xe9; adivinando, todo a trav&#xe9;s de una serie de preguntas que la m&#xe1;quina le har&#xe1;,"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Intro3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="usted responder&#xe1; con un &quot;S&#xcd;&quot; o con un &quot;NO&quot; a las preguntas que le har&#xe1;n."/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Intro4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Al finalizar las preguntas, si las preguntas coinciden con alg&#xfa;n personaje, este ser&#xe1; mostrado"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Intro5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="en pantalla."/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton_regresar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Regresar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_regresarActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Titulo_inst">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mistral" size="24" style="2"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Instrucciones"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="En caso de que las caracter&#xed;sticas no coincidan con ning&#xfa;n personaje, se le pedir&#xe1; que ingrese"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="el personaje en el que estaba pensando."/>
-      </Properties>
-    </Component>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="59" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabel_Bienvenido" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jButton_Salir" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabel_Intro4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                          <Component id="jLabel_Intro1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="jLabel_Intro2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="jLabel_Intro3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="264" max="-2" attributes="0"/>
+                          <Component id="jLabel_Intro5" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="243" max="-2" attributes="0"/>
+                          <Component id="jLabel_Titulo_inst" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="254" max="-2" attributes="0"/>
+                          <Component id="jButton_regresar" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="jButton_Salir" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                  <Component id="jLabel_Titulo_inst" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jLabel_Bienvenido" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel_Intro1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel_Intro2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel_Intro3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel_Intro4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel_Intro5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jButton_regresar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="39" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="el personaje en el que estaba pensando."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Bienvenido">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xa1;Bienvendio al ic&#xf3;nico juego de &quot;Adivina Qui&#xe9;n&quot;!"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton_Salir">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="X"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_SalirActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Intro1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="En este juego, usted le har&#xe1; adivinar al programa el personaje"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Intro2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="que est&#xe9; adivinando, todo a trav&#xe9;s de una serie de preguntas que la m&#xe1;quina le har&#xe1;,"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Intro3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="usted responder&#xe1; con un &quot;S&#xcd;&quot; o con un &quot;NO&quot; a las preguntas que le har&#xe1;n."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Intro4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Al finalizar las preguntas, si las preguntas coinciden con alg&#xfa;n personaje, este ser&#xe1; mostrado"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Intro5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="en pantalla."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton_regresar">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="6b" green="f1" red="33" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Regresar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_regresarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Titulo_inst">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Mistral" size="24" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Instrucciones"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="En caso de que las caracter&#xed;sticas no coincidan con ning&#xfa;n personaje, se le pedir&#xe1; que ingrese"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
