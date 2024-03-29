@@ -150,7 +150,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InstruccionesActionPerformed
         this.setVisible(false);
-        Intrucciones instr = new Intrucciones(this, rootPaneCheckingEnabled);
+        Instrucciones instr = new Instrucciones(this, rootPaneCheckingEnabled);
         instr.setVisible(true);
     }//GEN-LAST:event_jButton_InstruccionesActionPerformed
 

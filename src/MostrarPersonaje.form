@@ -52,11 +52,11 @@
                   <EmptySpace pref="67" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Personaje" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Tu_personaje" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jButton_Salir" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -64,9 +64,9 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton_Sí" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton_No" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -78,9 +78,9 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jButton_Salir" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Tu_personaje" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Personaje" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
@@ -91,8 +91,8 @@
                   </Group>
                   <EmptySpace pref="66" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton_Sí" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton_No" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
@@ -100,7 +100,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="jLabel_Personaje">
           <Properties>
             <Property name="text" type="java.lang.String" value="x"/>
           </Properties>
@@ -122,7 +122,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_SalirActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="jLabel_Tu_personaje">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tu personaje es:"/>
           </Properties>
@@ -154,7 +154,7 @@
             <Property name="text" type="java.lang.String" value="&quot;Espacio para la imagen&quot;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="jButton_S&#xed;">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="6b" green="f1" red="33" type="rgb"/>
@@ -162,13 +162,16 @@
             <Property name="text" type="java.lang.String" value="S&#xcd;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="jButton_No">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="6b" green="f1" red="33" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="NO"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_NoActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

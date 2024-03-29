@@ -7,12 +7,12 @@
  *
  * @author toled
  */
-public class Intrucciones extends javax.swing.JDialog {
+public class Instrucciones extends javax.swing.JDialog {
 
     /**
      * Creates new form NewJDialog
      */
-    public Intrucciones(java.awt.Frame parent, boolean modal) {
+    public Instrucciones(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.setLocationRelativeTo(null);
@@ -27,6 +27,7 @@ public class Intrucciones extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel_Bienvenido = new javax.swing.JLabel();
@@ -38,7 +39,8 @@ public class Intrucciones extends javax.swing.JDialog {
         jLabel_Intro5 = new javax.swing.JLabel();
         jButton_regresar = new javax.swing.JButton();
         jLabel_Titulo_inst = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+
+        jLabel2.setText("En caso de que las características no coincidan con ningún personaje, se le pedirá que ingrese");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -79,8 +81,6 @@ public class Intrucciones extends javax.swing.JDialog {
         jLabel_Titulo_inst.setFont(new java.awt.Font("Mistral", 2, 24)); // NOI18N
         jLabel_Titulo_inst.setText("Instrucciones");
 
-        jLabel2.setText("En caso de que las características no coincidan con ningún personaje, se le pedirá que ingrese");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -89,15 +89,13 @@ public class Intrucciones extends javax.swing.JDialog {
                 .addContainerGap(59, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel2)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel_Bienvenido)
-                                .addGap(167, 167, 167))
-                            .addComponent(jButton_Salir, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel_Intro4)
-                                .addGap(54, 54, 54))))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(jLabel_Bienvenido)
+                            .addGap(167, 167, 167))
+                        .addComponent(jButton_Salir, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(jLabel_Intro4)
+                            .addGap(54, 54, 54)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(190, 190, 190))))
@@ -141,9 +139,7 @@ public class Intrucciones extends javax.swing.JDialog {
                 .addComponent(jLabel_Intro4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel_Intro5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(28, 28, 28)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addComponent(jButton_regresar)
@@ -191,21 +187,23 @@ public class Intrucciones extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Intrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Intrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Intrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Intrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Intrucciones dialog = new Intrucciones(new javax.swing.JFrame(), true);
+                Instrucciones dialog = new Instrucciones(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -218,27 +216,7 @@ public class Intrucciones extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_Créditos;
-    private javax.swing.JButton jButton_Créditos1;
-    private javax.swing.JButton jButton_Créditos2;
-    private javax.swing.JButton jButton_Créditos3;
-    private javax.swing.JButton jButton_Instrucciones;
-    private javax.swing.JButton jButton_Instrucciones1;
-    private javax.swing.JButton jButton_Instrucciones2;
-    private javax.swing.JButton jButton_Instrucciones3;
-    private javax.swing.JButton jButton_Jugar;
-    private javax.swing.JButton jButton_Jugar1;
-    private javax.swing.JButton jButton_Jugar2;
-    private javax.swing.JButton jButton_Jugar3;
-    private javax.swing.JButton jButton_Personajes;
-    private javax.swing.JButton jButton_Personajes1;
-    private javax.swing.JButton jButton_Personajes2;
-    private javax.swing.JButton jButton_Personajes3;
     private javax.swing.JButton jButton_Salir;
-    private javax.swing.JButton jButton_Salir1;
-    private javax.swing.JButton jButton_Salir2;
-    private javax.swing.JButton jButton_Salir3;
-    private javax.swing.JButton jButton_Salir4;
     private javax.swing.JButton jButton_regresar;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -248,15 +226,7 @@ public class Intrucciones extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel_Intro3;
     private javax.swing.JLabel jLabel_Intro4;
     private javax.swing.JLabel jLabel_Intro5;
-    private javax.swing.JLabel jLabel_Titulo1;
-    private javax.swing.JLabel jLabel_Titulo2;
-    private javax.swing.JLabel jLabel_Titulo3;
-    private javax.swing.JLabel jLabel_Titulo4;
     private javax.swing.JLabel jLabel_Titulo_inst;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel_Fondo;
-    private javax.swing.JPanel jPanel_Fondo1;
-    private javax.swing.JPanel jPanel_Fondo2;
-    private javax.swing.JPanel jPanel_Fondo3;
     // End of variables declaration//GEN-END:variables
 }

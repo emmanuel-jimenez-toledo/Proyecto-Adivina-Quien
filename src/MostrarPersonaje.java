@@ -28,19 +28,19 @@ public class MostrarPersonaje extends javax.swing.JDialog {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel_Personaje = new javax.swing.JLabel();
         jButton_Salir = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_Tu_personaje = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButton_Sí = new javax.swing.JButton();
+        jButton_No = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(188, 252, 203));
 
-        jLabel3.setText("x");
+        jLabel_Personaje.setText("x");
 
         jButton_Salir.setBackground(new java.awt.Color(255, 0, 0));
         jButton_Salir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -52,7 +52,7 @@ public class MostrarPersonaje extends javax.swing.JDialog {
             }
         });
 
-        jLabel1.setText("Tu personaje es:");
+        jLabel_Tu_personaje.setText("Tu personaje es:");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -69,11 +69,16 @@ public class MostrarPersonaje extends javax.swing.JDialog {
 
         jLabel2.setText("\"Espacio para la imagen\"");
 
-        jButton1.setBackground(new java.awt.Color(51, 241, 107));
-        jButton1.setText("SÍ");
+        jButton_Sí.setBackground(new java.awt.Color(51, 241, 107));
+        jButton_Sí.setText("SÍ");
 
-        jButton2.setBackground(new java.awt.Color(51, 241, 107));
-        jButton2.setText("NO");
+        jButton_No.setBackground(new java.awt.Color(51, 241, 107));
+        jButton_No.setText("NO");
+        jButton_No.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_NoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -87,17 +92,17 @@ public class MostrarPersonaje extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(jLabel_Personaje)
                         .addGap(174, 174, 174))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(jLabel_Tu_personaje)
                         .addGap(131, 131, 131))
                     .addComponent(jButton_Salir, javax.swing.GroupLayout.Alignment.TRAILING)))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(69, 69, 69)
-                .addComponent(jButton1)
+                .addComponent(jButton_Sí)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(jButton_No)
                 .addGap(83, 83, 83))
         );
         jPanel2Layout.setVerticalGroup(
@@ -107,9 +112,9 @@ public class MostrarPersonaje extends javax.swing.JDialog {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton_Salir)
                         .addGap(52, 52, 52)
-                        .addComponent(jLabel1)
+                        .addComponent(jLabel_Tu_personaje)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3))
+                        .addComponent(jLabel_Personaje))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addComponent(jLabel2)
@@ -117,8 +122,8 @@ public class MostrarPersonaje extends javax.swing.JDialog {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(jButton_Sí)
+                    .addComponent(jButton_No))
                 .addGap(50, 50, 50))
         );
 
@@ -139,6 +144,12 @@ public class MostrarPersonaje extends javax.swing.JDialog {
     private void jButton_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton_SalirActionPerformed
+
+    private void jButton_NoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_NoActionPerformed
+        this.setVisible(false);
+        PedirPersonaje pedir = new PedirPersonaje(null, rootPaneCheckingEnabled);
+        pedir.setVisible(true);
+    }//GEN-LAST:event_jButton_NoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,12 +194,12 @@ public class MostrarPersonaje extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton_No;
     private javax.swing.JButton jButton_Salir;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton_Sí;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel_Personaje;
+    private javax.swing.JLabel jLabel_Tu_personaje;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
