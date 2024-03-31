@@ -32,7 +32,7 @@ public class Jugar extends javax.swing.JDialog {
         jButton_No = new javax.swing.JButton();
         jButton_Salir = new javax.swing.JButton();
         pregunta = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButton_opciones = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -56,10 +56,10 @@ public class Jugar extends javax.swing.JDialog {
 
         pregunta.setText("pregunta");
 
-        jButton1.setText("Opciones");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_opciones.setText("Salir");
+        jButton_opciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton_opcionesActionPerformed(evt);
             }
         });
 
@@ -75,7 +75,7 @@ public class Jugar extends javax.swing.JDialog {
                 .addGap(113, 113, 113))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
+                .addComponent(jButton_opciones)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton_Salir))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -90,7 +90,7 @@ public class Jugar extends javax.swing.JDialog {
                     .addComponent(jButton_Salir)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1)))
+                        .addComponent(jButton_opciones)))
                 .addGap(66, 66, 66)
                 .addComponent(pregunta)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
@@ -122,10 +122,11 @@ public class Jugar extends javax.swing.JDialog {
         System.exit(0);
     }//GEN-LAST:event_jButton_SalirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Opciones_juego opciones = new Opciones_juego(null, rootPaneCheckingEnabled);
-        opciones.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButton_opcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_opcionesActionPerformed
+        this.setVisible(false);
+        Inicio inicio = new Inicio();
+        inicio.setVisible(true);
+    }//GEN-LAST:event_jButton_opcionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,10 +171,10 @@ public class Jugar extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton_No;
     private javax.swing.JButton jButton_Salir;
     private javax.swing.JButton jButton_Sí;
+    private javax.swing.JButton jButton_opciones;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel pregunta;
     // End of variables declaration//GEN-END:variables

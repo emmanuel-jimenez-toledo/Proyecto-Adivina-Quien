@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
@@ -12,6 +15,7 @@ public class PedirPersonaje extends javax.swing.JDialog {
     /**
      * Creates new form PedirPersonaje
      */
+    String presonaje;
     public PedirPersonaje(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -53,7 +57,7 @@ public class PedirPersonaje extends javax.swing.JDialog {
         Texto2.setText("Ingrese el personaje en el que estaba pensando");
 
         jButton_OK.setBackground(new java.awt.Color(51, 241, 107));
-        jButton_OK.setText("OK");
+        jButton_OK.setText("Listo");
         jButton_OK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_OKActionPerformed(evt);

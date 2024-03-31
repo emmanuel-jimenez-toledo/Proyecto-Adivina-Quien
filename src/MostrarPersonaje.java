@@ -71,6 +71,11 @@ public class MostrarPersonaje extends javax.swing.JDialog {
 
         jButton_Sí.setBackground(new java.awt.Color(51, 241, 107));
         jButton_Sí.setText("SÍ");
+        jButton_Sí.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_SíActionPerformed(evt);
+            }
+        });
 
         jButton_No.setBackground(new java.awt.Color(51, 241, 107));
         jButton_No.setText("NO");
@@ -150,6 +155,12 @@ public class MostrarPersonaje extends javax.swing.JDialog {
         PedirPersonaje pedir = new PedirPersonaje(null, rootPaneCheckingEnabled);
         pedir.setVisible(true);
     }//GEN-LAST:event_jButton_NoActionPerformed
+
+    private void jButton_SíActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SíActionPerformed
+        this.setVisible(false);
+        Victoria victoria = new Victoria(null, rootPaneCheckingEnabled);
+        victoria.setVisible(true);
+    }//GEN-LAST:event_jButton_SíActionPerformed
 
     /**
      * @param args the command line arguments

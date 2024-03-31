@@ -7,12 +7,12 @@
  *
  * @author toled
  */
-public class Opciones_juego extends javax.swing.JDialog {
+public class Victoria extends javax.swing.JDialog {
 
     /**
-     * Creates new form Opciones_juego
+     * Creates new form Ganado
      */
-    public Opciones_juego(java.awt.Frame parent, boolean modal) {
+    public Victoria(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.setLocationRelativeTo(null);
@@ -28,20 +28,27 @@ public class Opciones_juego extends javax.swing.JDialog {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton_continuar = new javax.swing.JButton();
+        Victoria = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jButton_Inicio = new javax.swing.JButton();
-        jButton_Instrucciones = new javax.swing.JButton();
+        jButton_Salir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(188, 214, 169));
+        jPanel1.setBackground(new java.awt.Color(188, 252, 203));
 
-        jButton_continuar.setText("Continuar");
-        jButton_continuar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_continuarActionPerformed(evt);
-            }
-        });
+        Victoria.setText("¡Otra victoria más para mí!");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         jButton_Inicio.setText("Inicio");
         jButton_Inicio.addActionListener(new java.awt.event.ActionListener() {
@@ -50,10 +57,13 @@ public class Opciones_juego extends javax.swing.JDialog {
             }
         });
 
-        jButton_Instrucciones.setText("Instrucciones");
-        jButton_Instrucciones.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Salir.setBackground(new java.awt.Color(255, 0, 0));
+        jButton_Salir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton_Salir.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_Salir.setText("X");
+        jButton_Salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_InstruccionesActionPerformed(evt);
+                jButton_SalirActionPerformed(evt);
             }
         });
 
@@ -62,23 +72,32 @@ public class Opciones_juego extends javax.swing.JDialog {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton_continuar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton_Inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton_Instrucciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(131, 131, 131)
+                        .addComponent(Victoria))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(150, 150, 150)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(164, 164, 164)
+                        .addComponent(jButton_Inicio)))
+                .addContainerGap(130, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton_Salir))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jButton_continuar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton_Salir)
+                .addGap(54, 54, 54)
+                .addComponent(Victoria)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jButton_Inicio)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton_Instrucciones)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -95,25 +114,15 @@ public class Opciones_juego extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton_continuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_continuarActionPerformed
-        this.setVisible(false);
-    }//GEN-LAST:event_jButton_continuarActionPerformed
-
     private void jButton_InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InicioActionPerformed
-        Jugar jugar = new Jugar(null, rootPaneCheckingEnabled);
-        Inicio inicio = new Inicio();
-        jugar.setVisible(false);
         this.setVisible(false);
+        Inicio inicio = new Inicio();
         inicio.setVisible(true);
     }//GEN-LAST:event_jButton_InicioActionPerformed
 
-    private void jButton_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InstruccionesActionPerformed
-        Instrucciones intr = new Instrucciones(null, rootPaneCheckingEnabled);
-        Jugar jugar = new Jugar(null, rootPaneCheckingEnabled);
-        jugar.setVisible(false);
-        this.setVisible(false);
-        intr.setVisible(true);
-    }//GEN-LAST:event_jButton_InstruccionesActionPerformed
+    private void jButton_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton_SalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,20 +141,21 @@ public class Opciones_juego extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Opciones_juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Victoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Opciones_juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Victoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Opciones_juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Victoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Opciones_juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Victoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Opciones_juego dialog = new Opciones_juego(new javax.swing.JFrame(), true);
+                Victoria dialog = new Victoria(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -158,9 +168,10 @@ public class Opciones_juego extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Victoria;
     private javax.swing.JButton jButton_Inicio;
-    private javax.swing.JButton jButton_Instrucciones;
-    private javax.swing.JButton jButton_continuar;
+    private javax.swing.JButton jButton_Salir;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
