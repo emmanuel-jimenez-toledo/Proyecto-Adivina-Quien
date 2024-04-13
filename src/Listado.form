@@ -61,7 +61,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                           <Component id="jScrollPane_Reales" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="54" max="32767" attributes="0"/>
+                          <EmptySpace pref="65" max="32767" attributes="0"/>
                           <Component id="jScrollPane_Imaginarios" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -81,7 +81,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                           <Component id="jScrollPane_Animales" min="-2" pref="118" max="-2" attributes="0"/>
-                          <EmptySpace pref="69" max="32767" attributes="0"/>
+                          <EmptySpace pref="80" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -194,6 +194,9 @@
           <SubComponents>
             <Component class="javax.swing.JList" name="jListReales">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="ff" red="66" type="rgb"/>
+                </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="10">
                     <StringItem index="0" value="1. I&#xf3;sif Stalin"/>
@@ -203,7 +206,7 @@
                     <StringItem index="4" value="5. Omar Chaparro"/>
                     <StringItem index="5" value="6. Chespirito"/>
                     <StringItem index="6" value="7. Will Smith"/>
-                    <StringItem index="7" value="8. Leonardo di Caprio"/>
+                    <StringItem index="7" value="8. Leonardo DiCaprio"/>
                     <StringItem index="8" value="9. Ariana Grande"/>
                     <StringItem index="9" value="10. Michelle Obama"/>
                   </StringArray>
@@ -224,6 +227,9 @@
           <SubComponents>
             <Component class="javax.swing.JList" name="jListImaginarios">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="ff" red="66" type="rgb"/>
+                </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="10">
                     <StringItem index="0" value="1. Iron Man"/>
@@ -254,6 +260,9 @@
           <SubComponents>
             <Component class="javax.swing.JList" name="jListAnimales">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="ff" red="66" type="rgb"/>
+                </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="10">
                     <StringItem index="0" value="1. Perro"/>

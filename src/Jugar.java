@@ -40,9 +40,11 @@ public class Jugar extends javax.swing.JDialog {
 
         jButton_Sí.setBackground(new java.awt.Color(51, 241, 107));
         jButton_Sí.setText("SÍ");
+        boolean si = true;
 
         jButton_No.setBackground(new java.awt.Color(51, 241, 107));
         jButton_No.setText("NO");
+        boolean no = false;
 
         jButton_Salir.setBackground(new java.awt.Color(255, 0, 0));
         jButton_Salir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -56,6 +58,7 @@ public class Jugar extends javax.swing.JDialog {
 
         pregunta.setText("pregunta");
 
+        jButton_opciones.setBackground(new java.awt.Color(51, 241, 107));
         jButton_opciones.setText("Salir");
         jButton_opciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

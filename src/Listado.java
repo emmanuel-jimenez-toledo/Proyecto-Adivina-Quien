@@ -67,13 +67,15 @@ public class Listado extends javax.swing.JDialog {
 
         jLabel_Expli3.setText("A continuación se mostrarán los personajes:");
 
+        jListReales.setBackground(new java.awt.Color(102, 255, 153));
         jListReales.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "1. Iósif Stalin", "2. Taylor Swift", "3. Freddy Mercurie", "4. Porfirio Díaz", "5. Omar Chaparro", "6. Chespirito", "7. Will Smith", "8. Leonardo di Caprio", "9. Ariana Grande", "10. Michelle Obama" };
+            String[] strings = { "1. Iósif Stalin", "2. Taylor Swift", "3. Freddy Mercurie", "4. Porfirio Díaz", "5. Omar Chaparro", "6. Chespirito", "7. Will Smith", "8. Leonardo DiCaprio", "9. Ariana Grande", "10. Michelle Obama" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane_Reales.setViewportView(jListReales);
 
+        jListImaginarios.setBackground(new java.awt.Color(102, 255, 153));
         jListImaginarios.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "1. Iron Man", "2. Capitán América", "3. Bob Esponja", "4. El chavo del 8", "5. Dominic Toretto", "6. Terminator", "7. Pantera Rosa", "8. Venom", "9. Simón \"Ghost\" Riley", "10. Spiderman" };
             public int getSize() { return strings.length; }
@@ -81,6 +83,7 @@ public class Listado extends javax.swing.JDialog {
         });
         jScrollPane_Imaginarios.setViewportView(jListImaginarios);
 
+        jListAnimales.setBackground(new java.awt.Color(102, 255, 153));
         jListAnimales.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "1. Perro", "2. Gato", "3. Quetzal", "4. Jirafa", "5. León", "6. Tigre", "7. Jaguar", "8. Foca", "9. Tiburón", "10. Elefante" };
             public int getSize() { return strings.length; }
@@ -123,7 +126,7 @@ public class Listado extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(73, 73, 73)
                         .addComponent(jScrollPane_Reales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                         .addComponent(jScrollPane_Imaginarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(111, 111, 111)
@@ -139,7 +142,7 @@ public class Listado extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
                         .addComponent(jScrollPane_Animales, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(69, Short.MAX_VALUE))))
+                        .addContainerGap(80, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(166, 166, 166)
                 .addComponent(jLabel_Expli1)

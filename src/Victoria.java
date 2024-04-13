@@ -50,6 +50,7 @@ public class Victoria extends javax.swing.JDialog {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
+        jButton_Inicio.setBackground(new java.awt.Color(51, 241, 107));
         jButton_Inicio.setText("Inicio");
         jButton_Inicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
