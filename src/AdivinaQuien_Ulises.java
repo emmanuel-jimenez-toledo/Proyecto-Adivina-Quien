@@ -95,14 +95,14 @@ public class AdivinaQuien_Ulises {
         JOptionPane.showMessageDialog(null, "¡Vas por el camino de los personajes imaginarios!");
 
         boolean esHumano = pregunta("¿Tu personaje es un humano?");
-        boolean tieneEscudo = false, cyborg = false, volveré = false;
+        boolean tieneEscudo = false, volveré = false, futuro = false, marino = false;
         boolean usaArmadura = false, felino = false, rosa = false;
         boolean esAmarillo = false, espacio = false, enemigoSpidey = false;
         boolean viveEnunBarril = false, soldado = false, mascCalavera = false;
-        boolean esCorredor = false, musculoso = false, millonario = false;
-        boolean hombre = false, niño = false, poderAraña = false;
+        boolean esCorredor = false, slimeNegro = false, millonario = false;
+        boolean familia = false, niño = false, poderAraña = false, caricatura = false;
         boolean craneoRojo = false, esSuperheroe = false, adolescente = false;
-        boolean callofduty = false;
+        boolean callofduty = false, pareceHum = false;
         
         if (esHumano){
             esSuperheroe = pregunta("¿Tu personaje es un superhéroe?");
@@ -133,34 +133,83 @@ public class AdivinaQuien_Ulises {
                         callofduty = pregunta("¿Tu personaje pertenece a la saga Call of Duty?");
                     }
                 }
+            }//Toretto
+            esCorredor = pregunta("¿Tu personaje es corredor de autos?");
+            if (esCorredor){
+                familia = pregunta("¿Tu personaje dice que la famila es lo más importante?");
+            }else{
+                //Chavito
+                niño = pregunta("¿Tu personaje es un niño?");
+                if (niño){
+                    viveEnunBarril = pregunta("¿Tu personaje vive en un barril?");
+                }
+            }
+        }else{
+            //Terminator
+            pareceHum = pregunta("¿Tu personaje parece humano?");
+            if (pareceHum){
+                futuro = pregunta("¿Tu personaje viene del futuro?");
+                if (futuro){
+                    volveré = pregunta("¿Tu personaje dijo alguna vez 'volveré'?");
+                }
+            }else{
+                //Venom
+                espacio = pregunta("¿Tu personaje viene del espacio?");
+                if (espacio){
+                    enemigoSpidey = pregunta("¿Tu personaje es un enemigo de Spiderman?");
+                    if (enemigoSpidey){
+                        slimeNegro = pregunta("¿Tu personaje es como un slime negro?");
+                    }
+                }
+            }
+            caricatura = pregunta("¿Tu personaje es de una caricatura?");
+            if (caricatura){
+                //Bob esponja
+                marino = pregunta("¿Tu personaje vive en el fondo del mar?");
+                if (marino){
+                    esAmarillo = pregunta("¿Tu personaje es amarillo?");
+                }else{
+                    //Pantera rosa
+                    felino = pregunta("Tu personaje es un felino?");
+                    if (felino){
+                        rosa = pregunta("Tu personaje es rosa?");
+                    }
+                }
             }
         }
-        /*if (esSuperheroe) {
-            tieneEscudo = pregunta("¿Tu personaje usa un escudo?");
-            usaArmadura = pregunta("¿Tu personaje usa Armadura?");
-        } else {
-            esAmarillo = pregunta("¿El personaje es de color amarillo?");
-            viveEnunBarril = pregunta("¿Tu personaje vive en un barril?");
-            if (!viveEnunBarril) {
-                esCorredor = pregunta("¿Tu personaje es corredor de autos?");
-            }
-        }*/
-
+        
         // Lógica para adivinar personajes imaginarios
-        if (esSuperheroe || esAmarillo || viveEnunBarril || esCorredor) {
+        if(esHumano){
             // Puedes agregar más lógica aquí para adivinar el personaje imaginario
             if (esSuperheroe && tieneEscudo && craneoRojo) {
                 JOptionPane.showMessageDialog(null, "¡Estás pensando en Capitan America!");
-            } else if (esSuperheroe && usaArmadura) {
+            } else if (esSuperheroe && usaArmadura && millonario) {
                 JOptionPane.showMessageDialog(null, "¡Estás pensando en Iron Man!");
-            } else if (esAmarillo && viveEnunBarril) {
+            } else if (niño && viveEnunBarril) {
                 JOptionPane.showMessageDialog(null, "¡Estás pensando en El Chavo del 8!");
-            } else if (esCorredor) {
+            } else if (esCorredor && familia) {
                 JOptionPane.showMessageDialog(null, "¡Estás pensando en Dominic Toretto!");
+            } else if (adolescente && poderAraña) {
+                JOptionPane.showMessageDialog(null, "¡Estás pensando en Spiderman!");
+            } else if (soldado && mascCalavera && callofduty) {
+                JOptionPane.showMessageDialog(null, "¡Estás pensando en Simon 'Ghost' Riley!");
+            } else {
+                JOptionPane.showMessageDialog(null, "¡Tu personaje no coincide con ninguna de las características!");
+            }
+        }else{
+            if (pareceHum && futuro && volveré) {
+                JOptionPane.showMessageDialog(null, "¡Estás pensando en Terminator!");
+            }else if (espacio && enemigoSpidey && slimeNegro) {
+                JOptionPane.showMessageDialog(null, "¡Estás pensando en Venom!");
+            }else if (caricatura && marino && esAmarillo) {
+                JOptionPane.showMessageDialog(null, "¡Estás pensando en Bob Esponja!");
+            }else if (caricatura && felino && rosa) {
+                JOptionPane.showMessageDialog(null, "¡Estás pensando en la Pantera Rosa!");
             } else {
                 JOptionPane.showMessageDialog(null, "¡Tu personaje no coincide con ninguna de las características!");
             }
         }
+        
     }
 
     // Función para adivinar animales
