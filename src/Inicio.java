@@ -33,6 +33,13 @@ public class Inicio extends javax.swing.JFrame {
         jButton_Personajes = new javax.swing.JButton();
         jButton_Instrucciones = new javax.swing.JButton();
         jButton_Créditos = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -85,41 +92,109 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\toled\\OneDrive\\Imágenes\\Signo.png")); // NOI18N
+
         javax.swing.GroupLayout jPanel_FondoLayout = new javax.swing.GroupLayout(jPanel_Fondo);
         jPanel_Fondo.setLayout(jPanel_FondoLayout);
         jPanel_FondoLayout.setHorizontalGroup(
             jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
-                .addContainerGap(174, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton_Salir))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(jLabel_Titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(157, 157, 157))
-            .addGroup(jPanel_FondoLayout.createSequentialGroup()
-                .addGap(227, 227, 227)
+                .addGap(43, 43, 43)
+                .addComponent(jLabel3)
+                .addGap(42, 42, 42))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
+                .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel4)
+                        .addGap(102, 102, 102))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1)
+                        .addGap(63, 63, 63)))
                 .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton_Instrucciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton_Jugar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton_Personajes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton_Créditos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton_Salir))
+                    .addComponent(jButton_Créditos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(12, 12, 12)))
+                .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel5)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel6)
+                        .addGap(29, 29, 29))))
         );
         jPanel_FondoLayout.setVerticalGroup(
             jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_FondoLayout.createSequentialGroup()
                 .addComponent(jButton_Salir)
-                .addGap(1, 1, 1)
-                .addComponent(jLabel_Titulo1)
-                .addGap(46, 46, 46)
-                .addComponent(jButton_Jugar)
-                .addGap(18, 18, 18)
-                .addComponent(jButton_Instrucciones)
-                .addGap(18, 18, 18)
-                .addComponent(jButton_Personajes)
-                .addGap(18, 18, 18)
-                .addComponent(jButton_Créditos)
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jLabel_Titulo1)
+                        .addGap(46, 46, 46)
+                        .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                .addComponent(jButton_Jugar)
+                                .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                        .addGap(19, 19, 19)
+                                        .addComponent(jButton_Instrucciones)
+                                        .addGap(21, 21, 21)
+                                        .addComponent(jButton_Personajes)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                                .addComponent(jLabel6)
+                                                .addContainerGap(37, Short.MAX_VALUE))
+                                            .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                                .addComponent(jButton_Créditos)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel7))))
+                                    .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                        .addGap(3, 3, 3)
+                                        .addComponent(jLabel5)
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_FondoLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel4)
+                                .addGap(56, 56, 56))))
+                    .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                        .addGroup(jPanel_FondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel3))
+                            .addGroup(jPanel_FondoLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel2)))
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -205,6 +280,13 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Jugar;
     private javax.swing.JButton jButton_Personajes;
     private javax.swing.JButton jButton_Salir;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel_Titulo1;
     private javax.swing.JPanel jPanel_Fondo;
     // End of variables declaration//GEN-END:variables
