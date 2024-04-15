@@ -1,3 +1,5 @@
+package Proyecto_adivina_quien;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
@@ -46,7 +48,6 @@ public class Créditos extends javax.swing.JDialog {
         jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setBackground(new java.awt.Color(220, 225, 136));
 
         jPanel1.setBackground(new java.awt.Color(188, 252, 203));
 
@@ -228,7 +229,7 @@ public class Créditos extends javax.swing.JDialog {
 
     private void jButton_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_regresarActionPerformed
         this.setVisible(false);
-        Inicio init = new Inicio();
+        Menú_inicio init = new Menú_inicio();
         init.setVisible(true);
     }//GEN-LAST:event_jButton_regresarActionPerformed
 

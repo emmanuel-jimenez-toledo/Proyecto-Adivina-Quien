@@ -1,10 +1,13 @@
+package Proyecto_adivina_quien;
+import static Proyecto_adivina_quien.Métodos_juego.pregunta;
+import static Proyecto_adivina_quien.Métodos_juego.redimensionarImagen;
 import java.awt.Color;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
-public class AkinatorGame_Erick {
+public class Iniciar_juego {
     
    public static void iniciarJuego() {
         //public static void main(String args[]){
@@ -146,7 +149,7 @@ public class AkinatorGame_Erick {
                         }
                    }
                }
-        }
+            }
         }
         
         //////////ANIMALES//////////
@@ -172,12 +175,11 @@ public class AkinatorGame_Erick {
          
         boolean animal = pregunta("Tu personaje es un animal?");    
         
-         //BIEN
     if(animal){
      //Cuatro patas   
      cuatro_patas = pregunta("¿Tiene cuatro patas?");
     if(cuatro_patas){
-         omnivoro = pregunta("¿Se alimenta de plantas y carne?");
+         omnivoro = pregunta("¿Es omnivoro");
         if(omnivoro){
           canino = pregunta("¿Es canino?");
          if(canino){
@@ -185,35 +187,64 @@ public class AkinatorGame_Erick {
         if(mejor_amigo){
             ladrar = pregunta("¿Ladra?");
             if(ladrar){
-             JOptionPane.showMessageDialog(null,"¡Es un perro!");
-        System.exit(0);
-                }      
-            }
+                Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "¡Es un perro!",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
+            }      
+        }
         }
         }//omnivoro
         
-   
-         herviboro = pregunta("Es un herviboro?");
+         herviboro = pregunta("¿Es un herviboro?");
         if(herviboro){
-           sabana = pregunta("Se encuentra en la sabana?");
+           sabana = pregunta("¿Se encuentra en la sabana?");
           if(sabana){
-            manchas_moteadas = pregunta("Tiene manchas moteadas?");
+            manchas_moteadas = pregunta("¿Tiene manchas moteadas?");
             if(manchas_moteadas){
-            cuello_largo = pregunta("Tiene cuello largo?");
+            cuello_largo = pregunta("¿Tiene cuello largo?");
             if(cuello_largo){
-              JOptionPane.showMessageDialog(null,"Es una jirafa");
-               System.exit(0);
+             Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es una jirafa",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
             }
             }
            
-         terrestre = pregunta("Es el animal terrestre mas pesado?");
+         terrestre = pregunta("¿Es el animal terrestre mas pesado?");
          if(terrestre){
-         mamut = pregunta("Es descendiente del mamut?");
+         mamut = pregunta("¿Es descendiente del mamut?");
          if(mamut){
-         trompa = pregunta("Tiene una trompa larga?");
+         trompa = pregunta("¿Tiene una trompa larga?");
          if(trompa){
-           JOptionPane.showMessageDialog(null,"Es un Elefante");
-          System.exit(0);
+               Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un Elefante",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
          }
          }
          }
@@ -224,54 +255,94 @@ public class AkinatorGame_Erick {
           }//HERVIBORO
    
         
-        carnivoro = pregunta("es carnivoro?");
+        carnivoro = pregunta("¿Es carnivoro?");
        if(carnivoro){
-            felino = pregunta("es felino?");
+            felino = pregunta("¿Es felino?");
            if(felino){
-            pariente = pregunta("es pariente del tigre?");
+            pariente = pregunta("¿Es pariente del tigre?");
            if(pariente){
-            maullar = pregunta("maulla?");
+            maullar = pregunta("¿Maulla?");
            if(maullar){
-               JOptionPane.showMessageDialog(null, "Es un gato");
-               System.exit(0);
+                Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un gato",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
            }
            }
            
-           africa = pregunta("Viven en Africa");
+           africa = pregunta("¿Viven en Africa");
            if(africa){
-           ruge = pregunta("Ruge?");
+           ruge = pregunta("¿Ruge?");
            if(ruge){
-           melena = pregunta("Los machos tienen melena?");
+           melena = pregunta("¿Los machos tienen melena?");
            if(melena){
-           disney = pregunta("Tiene su propia pelicula de Disney?");
+           disney = pregunta("¿Tiene su propia pelicula de Disney?");
            if(disney){
-             JOptionPane.showMessageDialog(null,"Es un Leon");
-            System.exit(0);
+              Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un León",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
            }
            }
            }//ruge
            }//africa
            
-           ruge = pregunta("Ruge?");
+           ruge = pregunta("¿Ruge?");
            if(ruge){
-           naranja_rayas = pregunta("Es de color Naranja con rayas negras?");
+           naranja_rayas = pregunta("¿Es de color Naranja con rayas negras?");
            if(naranja_rayas){
-           villano = pregunta("Es  el villano de -El libro de la selva-?");
+           villano = pregunta("¿Es  el villano de -El libro de la selva-?");
            if(villano){
-                 JOptionPane.showMessageDialog(null,"Es un Tigre");
-                 System.exit(0);
+                  Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un Tigre!",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
            }
            }
            }
            
-           selva = pregunta("Se encuentra en la selva?");
+           selva = pregunta("¿Se encuentra en la selva?");
            if(selva){
-           culturas = pregunta("Es venerado por las culturas mesoamericas?");
+           culturas = pregunta("¿Es venerado por las culturas mesoamericas?");
            if(culturas){
-           manchas_negras = pregunta("Tiene manchas negras?");
+           manchas_negras = pregunta("¿Tiene manchas negras?");
            if(manchas_negras){
-             JOptionPane.showMessageDialog(null,"Es un Jaguar");
-             System.exit(0);
+              Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un Jaguar!",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
            }
            }
            }
@@ -290,18 +361,28 @@ public class AkinatorGame_Erick {
     
       
         //AREA DE AVES
-         loro = pregunta("son parecidos a los loros?");
+         loro = pregunta("¿Son parecidos a los loros?");
         if(loro){
-            selva = pregunta("se encuentra en la selva?");
+            selva = pregunta("¿Se encuentra en la selva?");
            if(selva){
-            nacional = pregunta("es un animal nacional de Guatemala?");
+            nacional = pregunta("¿Es un animal nacional de Guatemala?");
            if(nacional){
-            herviboro = pregunta("es un herviboro?");
+            herviboro = pregunta("¿Es un herviboro?");
            if(herviboro){
-            extincion = pregunta("Estan en peligro de extincion?");
+            extincion = pregunta("¿Estan en peligro de extincion?");
            if(extincion){
-           JOptionPane.showMessageDialog(null, "Es un quetzal");
-           System.exit(0);
+           Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un Quetzal",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
            }
            }//herviboro
            }
@@ -311,31 +392,51 @@ public class AkinatorGame_Erick {
         
       
      
-       maritimo = pregunta("Es marino?");
+       maritimo = pregunta("¿Es maritimo?");
         if(maritimo){
-            carnivoro = pregunta("Son carnivoros?");
+            carnivoro = pregunta("¿Son carnivoros?");
             if(carnivoro){
-              mar_tierra = pregunta("Puede estar en el mar y en la tierra?");
+              mar_tierra = pregunta("¿Puede estar en el mar y en la tierra?");
         if(mar_tierra){
-        trucos = pregunta("Es usado en trucos y espectaculos en acuarios?");
+        trucos = pregunta("¿Es usado en trucos y espectaculos en acuarios?");
         if(trucos){
-        dos_patas = pregunta("Cuenta cos dos patas en forma de aleta?");
+        dos_patas = pregunta("¿Cuenta cos dos patas en forma de aleta?");
         if(dos_patas){
-          JOptionPane.showMessageDialog(null,"Es una foca");
-             System.exit(0);
+           Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es una foca",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
         }
         }
         }
-        temido = pregunta("Temidos por las personas?");
+        temido = pregunta("¿Temidos por las personas?");
         if(temido){
-        pacifico_atlantico = pregunta("Se encuentran en los oceanos pacifio y atlantico?");
+        pacifico_atlantico = pregunta("¿Se encuentran en los oceanos pacifio y atlantico?");
         if(pacifico_atlantico){
-        depredadores = pregunta("Son depredadores de los oceanos?");
+        depredadores = pregunta("¿Son depredadores de los oceanos?");
         if(depredadores){
-        versiones = pregunta("Tiene versiones martillo y tigre?");
+        versiones = pregunta("¿Tiene versiones martillo y tigre?");
         if(versiones){
-          JOptionPane.showMessageDialog(null,"Es un tiburon");
-             System.exit(0);
+           Image imagen = redimensionarImagen
+               ("", 200, 200);
+
+                // Mostrar el mensaje con la imagen
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Es un Tiburon",
+                    "Akinator",
+                    JOptionPane.INFORMATION_MESSAGE,
+                   new ImageIcon(imagen)
+                );
+                System.exit(0);
         }
         }
         }
@@ -344,51 +445,11 @@ public class AkinatorGame_Erick {
         }//maritimo
       
     
-    
-      
-      
-    
     }//animal
     
        
         
         
     }
-        public static boolean pregunta(String la_pregunta) {
-       Image iconic = redimensionarImagen
-        ("D:\\Escuela\\Universidad\\Programacion\\JAVA2\\Imagenes\\Akinator.jpg",100, 100);
-       Object[] opciones = {"SI", "NO","SALIR"};
-        
-        int respuesta = JOptionPane.showOptionDialog(
-                null, 
-                la_pregunta, 
-                "Akinator", 
-                0,
-                JOptionPane.QUESTION_MESSAGE,
-                 new ImageIcon(iconic),
-                opciones,
-                0
-                );
-        
-        if (respuesta == 0) {
-            return true; 
-        } else if (respuesta == 1) {
-            return false;
-        }else if (respuesta == 2){
-            System.exit(0);
-            return false;
-        }else{
-        return false;
-        }
-    }
-     
-     
-       
-   public static Image redimensionarImagen(String rutaImagenOriginal, int ancho, int alto) {
-        ImageIcon icono = new ImageIcon(rutaImagenOriginal);
-        Image imagenOriginal = icono.getImage();
-        return imagenOriginal.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH);
-    }
-
-
+    
 }

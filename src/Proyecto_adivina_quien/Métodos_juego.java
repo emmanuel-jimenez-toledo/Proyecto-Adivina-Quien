@@ -1,17 +1,19 @@
+package Proyecto_adivina_quien;
+
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-public class Question_Erick {
+public class Métodos_juego {
        public static boolean pregunta(String la_pregunta) {
        Image iconic = redimensionarImagen
-        ("D:\\Escuela\\Universidad\\Programacion\\JAVA2\\Imagenes\\Akinator.jpg",100, 100);
-       Object[] opciones = {"SI", "NO","REGRESAR"};
+        ("C:\\Users\\toled\\Downloads\\El acertijo.png",320, 300);
+       Object[] opciones = {"SI", "NO", "FINALIZAR"};
         
         int respuesta = JOptionPane.showOptionDialog(
                 null, 
                 la_pregunta, 
-                "Akinator", 
+                "Adivina Quién", 
                 0,
                 JOptionPane.QUESTION_MESSAGE,
                  new ImageIcon(iconic),

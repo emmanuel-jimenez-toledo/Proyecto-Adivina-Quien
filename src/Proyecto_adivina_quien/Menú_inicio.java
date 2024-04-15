@@ -1,3 +1,8 @@
+package Proyecto_adivina_quien;
+
+import static Proyecto_adivina_quien.Iniciar_juego.iniciarJuego;
+import Proyecto_adivina_quien.Créditos;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -7,12 +12,12 @@
  *
  * @author toled
  */
-public class Inicio extends javax.swing.JFrame {
+public class Menú_inicio extends javax.swing.JFrame {
 
     /**
      * Creates new form Inicio
      */
-    public Inicio() {
+    public Menú_inicio() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -219,7 +224,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton_JugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_JugarActionPerformed
         this.setVisible(false);
-        
+        iniciarJuego();
     }//GEN-LAST:event_jButton_JugarActionPerformed
 
     private void jButton_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InstruccionesActionPerformed
@@ -230,7 +235,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton_PersonajesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PersonajesActionPerformed
         this.setVisible(false);
-        Listado lista = new Listado(this, rootPaneCheckingEnabled);
+        Listado_personajes lista = new Listado_personajes(this, rootPaneCheckingEnabled);
         lista.setVisible(true);
     }//GEN-LAST:event_jButton_PersonajesActionPerformed
 
@@ -255,20 +260,21 @@ public class Inicio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menú_inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menú_inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menú_inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menú_inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Inicio().setVisible(true);
+                new Menú_inicio().setVisible(true);
             }
         });
     }

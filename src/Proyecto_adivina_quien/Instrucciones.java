@@ -1,3 +1,8 @@
+package Proyecto_adivina_quien;
+
+
+import Proyecto_adivina_quien.Menú_inicio;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
@@ -203,7 +208,7 @@ public class Instrucciones extends javax.swing.JDialog {
 
     private void jButton_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_regresarActionPerformed
         this.setVisible(false);
-        Inicio init = new Inicio();
+        Menú_inicio init = new Menú_inicio();
         init.setVisible(true);
     }//GEN-LAST:event_jButton_regresarActionPerformed
 
