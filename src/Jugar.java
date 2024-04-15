@@ -12,10 +12,13 @@ public class Jugar extends javax.swing.JDialog {
     /**
      * Creates new form Jugar
      */
+    boolean logica;
+    String preguntax = "¿tu personaje es real?";
     public Jugar(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.setLocationRelativeTo(null);
+        pregunta.setText(preguntax);
     }
 
     /**
@@ -28,11 +31,11 @@ public class Jugar extends javax.swing.JDialog {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton_Sí = new javax.swing.JButton();
-        jButton_No = new javax.swing.JButton();
+        javax.swing.JButton jButton_Sí = new javax.swing.JButton();
+        javax.swing.JButton jButton_No = new javax.swing.JButton();
         jButton_Salir = new javax.swing.JButton();
         pregunta = new javax.swing.JLabel();
-        jButton_opciones = new javax.swing.JButton();
+        jButton_salir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -41,10 +44,20 @@ public class Jugar extends javax.swing.JDialog {
         jButton_Sí.setBackground(new java.awt.Color(51, 241, 107));
         jButton_Sí.setText("SÍ");
         boolean si = true;
+        jButton_Sí.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_SíActionPerformed(evt);
+            }
+        });
 
         jButton_No.setBackground(new java.awt.Color(51, 241, 107));
         jButton_No.setText("NO");
         boolean no = false;
+        jButton_No.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_NoActionPerformed(evt);
+            }
+        });
 
         jButton_Salir.setBackground(new java.awt.Color(255, 0, 0));
         jButton_Salir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -58,11 +71,11 @@ public class Jugar extends javax.swing.JDialog {
 
         pregunta.setText("pregunta");
 
-        jButton_opciones.setBackground(new java.awt.Color(51, 241, 107));
-        jButton_opciones.setText("Salir");
-        jButton_opciones.addActionListener(new java.awt.event.ActionListener() {
+        jButton_salir.setBackground(new java.awt.Color(51, 241, 107));
+        jButton_salir.setText("Salir");
+        jButton_salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_opcionesActionPerformed(evt);
+                jButton_salirActionPerformed(evt);
             }
         });
 
@@ -78,11 +91,11 @@ public class Jugar extends javax.swing.JDialog {
                 .addGap(113, 113, 113))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton_opciones)
+                .addComponent(jButton_salir)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton_Salir))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(207, 207, 207)
+                .addGap(146, 146, 146)
                 .addComponent(pregunta)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -93,10 +106,10 @@ public class Jugar extends javax.swing.JDialog {
                     .addComponent(jButton_Salir)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton_opciones)))
-                .addGap(66, 66, 66)
+                        .addComponent(jButton_salir)))
+                .addGap(64, 64, 64)
                 .addComponent(pregunta)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_Sí)
                     .addComponent(jButton_No))
@@ -125,11 +138,19 @@ public class Jugar extends javax.swing.JDialog {
         System.exit(0);
     }//GEN-LAST:event_jButton_SalirActionPerformed
 
-    private void jButton_opcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_opcionesActionPerformed
+    private void jButton_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_salirActionPerformed
         this.setVisible(false);
         Inicio inicio = new Inicio();
         inicio.setVisible(true);
-    }//GEN-LAST:event_jButton_opcionesActionPerformed
+    }//GEN-LAST:event_jButton_salirActionPerformed
+
+    private void jButton_SíActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SíActionPerformed
+        logica = true;
+    }//GEN-LAST:event_jButton_SíActionPerformed
+
+    private void jButton_NoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_NoActionPerformed
+        logica = false;
+    }//GEN-LAST:event_jButton_NoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,10 +195,8 @@ public class Jugar extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_No;
     private javax.swing.JButton jButton_Salir;
-    private javax.swing.JButton jButton_Sí;
-    private javax.swing.JButton jButton_opciones;
+    private javax.swing.JButton jButton_salir;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel pregunta;
     // End of variables declaration//GEN-END:variables

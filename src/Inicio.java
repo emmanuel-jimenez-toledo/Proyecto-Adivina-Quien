@@ -219,8 +219,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton_JugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_JugarActionPerformed
         this.setVisible(false);
-        Jugar jugar = new Jugar(this, rootPaneCheckingEnabled);
-        jugar.setVisible(true);
+        
     }//GEN-LAST:event_jButton_JugarActionPerformed
 
     private void jButton_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InstruccionesActionPerformed
